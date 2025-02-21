@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <link rel="icon" type="image/png" href="weather-icon.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class=" main row  d-flex p-4 justify-content-center ">
+        <form class="col-8  col-lg-4 p-4">
+            <div class=" search d-flex">
+                <input type="text" id="search">
+                <button id="search-btn" type="submit" >
+                    <i class="fa fa-search"></i>
+                </button>
+            </div>
+           <section>
+                <figure class="name d-flex" id="name">
+                    <figcaption id="name">London</figcaption>
+                    <img id="flag" src="https://flagsapi.com/GB/shiny/32.png">
+                </figure>
+                <figure class="temperature">
+                    <img id="icon"src="https://openweathermap.org/img/wn/04n@4x.png">
+                    <figcaption>
+                        <span id="temperature">31</span>
+                        <span>°</span>
+                    </figcaption>
+                </figure>
+                <p class="description md-5" id="description">Overcast Cloud</p>
+                <ul class="row">
+                    <li class="col-4 r">
+                        <i class="fa fa-cloud"></i><br>
+                        <span>Clouds</span><br>
+                        <span id="clouds">98</span>
+                    </li>
+                    <li class="col-4 r">
+                        <i class="fa fa-tint"></i><br>
+                        <span>Humidity</span><br>
+                        <span id="humidity">55</span>
+                    </li>
+                    <li class="col-4">
+                        <i class="fa fa-tachometer"></i><br>
+                        <span>Pressure</span><br>
+                        <span id="pressure">1001</span>
+                    </li>
+                </ul>
+           </section>
+        </form>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>  
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./JS/script.js"></script>
+</body>
+</html>
